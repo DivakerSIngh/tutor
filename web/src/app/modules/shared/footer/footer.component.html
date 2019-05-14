@@ -1,0 +1,62 @@
+<a href="javascript:void(0);" class="scrollTopBtn" *ngIf="isScrollButton" (click)="scrollTopBtn">
+  <img src="assets/images/up-arrow.svg" alt="">
+</a>
+<!-- footer -->
+<footer *ngIf="IsFooterShow">
+  <div class="footer-listing">
+      <ul class="innerlinks">
+          <h3 class="heading">KoalaTalk</h3>
+          <li>
+              <a [class.disabled]="allowOrNot" href="javascript:void(0);">{{'about-us'}}</a>
+          </li>
+          <li>
+              <a [class.disabled]="allowOrNot" href="javascript:void(0);"> {{'privacy-policy'}}</a>
+          </li>
+          <li>
+              <a [class.disabled]="allowOrNot" href="javascript:void(0);"> {{'contact-us'}}</a>
+          </li>
+          <li>
+              <a [class.disabled]="allowOrNot" href="javascript:void(0);"> {{'press'}}</a>
+          </li>
+          <li>
+              <a [class.disabled]="allowOrNot" href="javascript:void(0);"> {{'blog'}}</a>
+          </li>
+      </ul>
+      <ul class="innerlinks">
+          <h3 class="heading">{{'tutors'}}</h3>
+          <!-- <li>
+                  
+              <a [class.disabled]="allowOrNot" href="javascript:void(0);" [routerLink]="['../teacher/listing/English']"> {{'english-tutor'}}</a>
+          </li>
+          <li>
+              <a [class.disabled]="allowOrNot" href="javascript:void(0);" [routerLink]="['../teacher/listing/Spanish']"> {{'spanish-tutor'}}</a>
+          </li>
+          <li>
+              <a [class.disabled]="allowOrNot" href="javascript:void(0);" [routerLink]="['../teacher/listing/Chinese']"> {{'chinese-tutor'}}</a>
+          </li>
+          <li>
+              <a [class.disabled]="allowOrNot" href="javascript:void(0);" [routerLink]="['../teacher/listing/Korean']">{{'korean-tutor'}}</a>
+          </li>
+          <li>
+              <a [class.disabled]="allowOrNot" href="javascript:void(0);" [routerLink]="['../teacher/listing/Japanese']"> {{'japanese-tutor'}}</a>
+          </li> -->
+      </ul>
+  </div>
+  <div class="footer-copyright clearfix">
+      <div class="container">
+          <p>© {{year}} KoalaTalk. {{'all-rights-reserved'}}.</p>
+          <ul class="social-icons">
+              <li>
+                  <a [class.disabled]="allowOrNot" href="javascript:void(0);"><img src="assets/images/facebook.png" alt="facebook"></a>
+              </li>
+              <li>
+                  <a [class.disabled]="allowOrNot" href="javascript:void(0);"><img src="assets/images/twitter.png" alt="twitter"></a>
+              </li>
+              <li>
+                  <a [class.disabled]="allowOrNot" href="javascript:void(0);"><img src="assets/images/google-plus.png" alt="google-plus"></a>
+              </li>
+          </ul>
+      </div>
+  </div>
+</footer>
+<!-- footer end -->
