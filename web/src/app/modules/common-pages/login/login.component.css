@@ -67,7 +67,11 @@
     -o-transition: all 0.4s;
     -moz-transition: all 0.4s;
   }
-  
+  .mat-form-field {
+    display: block;
+    position: relative;
+    text-align: left;
+}
   a:focus {
       outline: none !important;
   }
@@ -138,15 +142,7 @@
   }
   
   /*---------------------------------------------*/
-  button {
-      outline: none !important;
-      border: none;
-      background: transparent;
-  }
-  
-  button:hover {
-      cursor: pointer;
-  }
+ 
   
   iframe {
       border: none !important;
@@ -3608,6 +3604,17 @@ footer{
   display: none !important;
 }
 
+
+.body-wrapper {
+  min-height: 100%;
+  position: relative;
+  background: #f9fafb;
+  color: #52686e;
+  font-size: 14px;
+  font-family: 'Ubuntu', sans-serif;
+  padding-top: 61px  !important;
+  padding-bottom: 0px !important;
+}
 
 
 

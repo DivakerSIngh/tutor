@@ -7,7 +7,16 @@ import { SharedModule } from "./modules/shared/shared.module";
 import { RouterModule } from '@angular/router';
 import { HeaderComponent } from './modules/shared/header/header.component';
 import { LoginComponent } from './modules/common-pages/login/login.component';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {
+  MatButtonModule,
+  MatInputModule,
+  MatRippleModule,
+  MatFormFieldModule,
+  MatTooltipModule,
+  MatAutocompleteModule,
+  MatSelectModule,MatGridListModule,MatProgressSpinnerModule,MatPaginatorModule, MatSlideToggleModule
+} from '@angular/material';
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,6 +25,7 @@ import { LoginComponent } from './modules/common-pages/login/login.component';
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     AppRoutingModule,
     SharedModule,
     BrowserModule,
@@ -23,6 +33,13 @@ import { LoginComponent } from './modules/common-pages/login/login.component';
     RouterModule,
     SharedModule,
     FormsModule,
+    MatButtonModule,
+  MatInputModule,
+  MatRippleModule,
+  MatFormFieldModule,
+  MatTooltipModule,
+  MatAutocompleteModule,
+  MatSelectModule,MatGridListModule,MatProgressSpinnerModule,MatPaginatorModule, MatSlideToggleModule
   ],
   providers: [],
   bootstrap: [AppComponent]

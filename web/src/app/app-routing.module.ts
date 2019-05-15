@@ -5,7 +5,7 @@ import { LoginComponent } from './modules/common-pages/login/login.component';
 // import { NotFoundComponent } from './modules/commonpages/not-found/not-found.component';
 
 const appRoutes: Routes = [   
-   
+  {path:'', loadChildren:'./modules/common-pages/common-pages.module#CommonPagesModule'},
   {path:'login', component:LoginComponent}
     // {path:'', loadChildren:'./modules/commonpages/commonpages.module#CommonpagesModule'},
     // {path:'teacher', loadChildren:'./modules/teacher/teacher.module#TeacherModule'},
