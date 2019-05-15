@@ -1,6 +1,6 @@
 <!-- header -->
 <div class="fixed-bodywrapper"></div>
-<header class="header-wrapper">
+<header class="header-wrapper"  [@visibilityChanged]="visibilityChanged">
     <div class="container-fluid clearfix">
         <a href="/" class="logo-wrpper for-desktop">
             <img src="assets/images/logo.png" alt="Koala Talk">
@@ -198,14 +198,14 @@
             </li>
             <li>
                 <a [class.disabled]="allowOrNot" href="javascript:void(0);" (click)="toggleSideMenu()" [routerLink]="['./teacher/listing']"
-                    routerLinkActive="active"> {{'find-a-tutor' }} </a>
+                    routerLinkActive="active"> {{'Find Expert' }} </a>
             </li>
             <li>
-                <a [class.disabled]="allowOrNot" href="javascript:void(0);" [routerLink]="['./find-topic']" (click)="toggleSideMenu()">{{'find-a-topic' }}</a>
+                <a [class.disabled]="allowOrNot" href="javascript:void(0);" [routerLink]="['./find-topic']" (click)="toggleSideMenu()">{{'Find Topic' }}</a>
             </li>
             <li class="showdropdown studygroup">
                 <a class="" [class.disabled]="allowOrNot" href="javascript:void(0);" (click)="togglestudy()" [class.toggle]="isStudyToggle">
-                {{'study-board' }}</a>
+                {{'Dashboard' }}</a>
                 <ul class="menudropdown" [class.showstudy]="isStudyToggle">
                     <li>
                         <a href="javascript:void(0);" [routerLink]="['./study-group']" (click)="toggleSideMenu()"> {{'study-group' }}</a>
@@ -223,7 +223,7 @@
                 <a [class.disabled]="allowOrNot" href="javascript:void(0);" [routerLink]="['./become-a-tutor']" routerLinkActive="active"
                     (click)="toggleSideMenu()">
 
-                    {{'become-a-tutor' }}
+                    {{'Become Expert' }}
 
                 </a>
             </li>

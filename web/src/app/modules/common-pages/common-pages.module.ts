@@ -15,8 +15,9 @@ import {
   MatSelectModule,MatGridListModule,MatProgressSpinnerModule,MatPaginatorModule, MatSlideToggleModule
 } from '@angular/material';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { RecomdedExpertComponent } from './recomded-expert/recomded-expert.component';
 @NgModule({
-  declarations: [HomeComponent],
+  declarations: [HomeComponent, RecomdedExpertComponent],
   imports: [
     CommonPageRouterModule,
    

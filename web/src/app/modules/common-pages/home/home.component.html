@@ -1,11 +1,8 @@
-
-
-
 <!-- home page start -->
-<!-- <div [@visibilityChanged]="visibilityChanged"> -->
-    <div>
-  <div class="overflow-wrap">
-      <!-- <ngx-slick-carousel class="carousel" 
+<div [@visibilityChanged]="visibilityChanged">
+
+    <div class="overflow-wrap">
+        <!-- <ngx-slick-carousel class="carousel" 
       #slickModal="slick-carousel" 
       [config]="slideConfig" 
       >
@@ -13,234 +10,240 @@
       <img src="{{ slide.img }}" alt="" width="100%">
       </div>
       </ngx-slick-carousel> -->
-      <div class="home-banner">
-        
-
-          <div class="home-banner-inner">
-              <div class="container">
-                  <div class="content">
-                      <h1 class="heading"> {{'Learn-to-speak-a-language' }}</h1>
-                      <p class="para">  {{'Learn anything tech anything' }}</p>
-                      <button class="custom-btn gradient">  {{'Start Finding' }}</button>
-                  </div>
-                  <div class="image-sec">
-                      <!-- <img src="assets/images/macbook.png" alt="Macbook"> -->
-                  </div>
-              </div>
-          </div>
-          
-      </div>
+        <div class="home-banner">
 
 
-      <div  class="tutor-list-wrapper">
-          <div  class="container">
-              <div class="tutor-filter">
-              
+            <div class="home-banner-inner">
+                <div class="container">
+                    <div class="content">
+                        <h1 class="heading"> {{'Learn-to-speak-a-language' }}</h1>
+                        <p class="para"> {{'Learn anything tech anything' }}</p>
+                        <button class="custom-btn gradient"> {{'Start Finding' }}</button>
+                    </div>
+                    <div class="image-sec">
+                        <!-- <img src="assets/images/macbook.png" alt="Macbook"> -->
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="tutor-list-wrapper">
+            <div class="container">
+                <div class="tutor-filter">
+
                     <div class="tp-form-shortcode-wrap">
                         <div class="tp-form-header">
                             <h6 class="tp-form-title">Find Your</h6>
                             <h4 class="tp-form-title">Tutor</h4>
                         </div>
                         <div class="tp-form">
-                            <form role="search" action="http://smarthead.ancorathemes.com/"
-                             method="get" id="tutor-search-form" class="tutor-plugin tutor-plugin-form-search">
+                            <form role="search" action="http://smarthead.ancorathemes.com/" method="get"
+                                id="tutor-search-form" class="tutor-plugin tutor-plugin-form-search">
 
-                             <mat-form-field class="example-full-width">
-                                <input type="text" required placeholder="Pick one" aria-label="Number" matInput [formControl]="myControl" [matAutocomplete]="auto">
-                                <mat-autocomplete #auto="matAutocomplete">
-                                  <mat-option *ngFor="let option of filteredOptions | async" [value]="option">
-                                    {{option}}
-                                  </mat-option>
-                                </mat-autocomplete>
-                              </mat-form-field> &nbsp; &nbsp; &nbsp; &nbsp;
-                              <mat-form-field class="example-full-width">
-                                  <input matInput  placeholder="Search topic" required>
+                                <mat-form-field class="example-full-width">
+                                    <input type="text" required placeholder="Pick one" aria-label="Number" matInput
+                                        [formControl]="myControl" [matAutocomplete]="auto">
+                                    <mat-autocomplete #auto="matAutocomplete">
+                                        <mat-option *ngFor="let option of filteredOptions | async" [value]="option">
+                                            {{option}}
+                                        </mat-option>
+                                    </mat-autocomplete>
+                                </mat-form-field> &nbsp; &nbsp; &nbsp; &nbsp;
+                                <mat-form-field class="example-full-width">
+                                    <input matInput placeholder="Search topic" required>
                                 </mat-form-field>
                                 &nbsp; &nbsp;
                                 <div class="tp-form-button">
-                                    <button mat-raised-button type="button"  class="com-btn gradient pull-right">Find Now</button>
+                                    <button mat-raised-button type="button" class="com-btn gradient pull-right">Find
+                                        Now</button>
                                 </div>
                             </form>
                         </div>
                     </div>
 
-  </div></div></div>
-  <!-- home page end -->
-  <!-- how it works -->
-  <div class="howitworks clearfix">
+                </div>
+            </div>
+        </div>
+        <!-- home page end -->
+        <!-- how it works -->
+        <div class="howitworks clearfix">
 
-      <div class="container">
-          <h2 class="titleheading" (click)="clickout()">{{'how-it-works' }}</h2>
-          <div class="clearfix"></div>
-          <div class="column">
-              <figure class="icon-bg">
-                  <img src="assets/images/icon1.png" alt="">
-              </figure>
-              <h3 class="heading">{{'find-a-tutor' }}</h3>
-              <p class="para">{{'find-a-tutor-text' }}</p>
-          </div>
-          <div class="column">
-              <figure class="icon-bg">
-                  <img src="assets/images/icon2.png" alt="">
-              </figure>
-              <h3 class="heading">{{'book-lessons' }}</h3>
-              <p class="para">{{'book-lessons-text' }}</p>
-          </div>
-          <div class="column">
-              <figure class="icon-bg">
-                  <img src="assets/images/icon3.png" alt="">
-              </figure>
-              <h3 class="heading">{{'start-mastering' }}</h3>
-              <p class="para"> {{'start-mastering-text' }}</p>
-          </div>
-      </div>
-  </div>
-  <!-- how it works end -->
-  <!-- about-wrapper  -->
-  <div class="about-wrapper clearfix">
-      <div class="aboutinner-wrapper">
-          <div class="container">
-              <div class="image-sec">
-                  <img src="assets/images/banner1.jpg" alt="banner">
-              </div>
-              <div class="content">
-                  <h2 class="titleheading">{{'lorem-ipsum-is-simply'}}</h2>
-                  <p class="para">{{'lorem-ipsum-is-simply-text'}} </p>                    
-                  <button class="custom-btn gradient"> {{'learn-more'}}</button>
-              </div>
-          </div>
-      </div>
-  </div>
-  <!-- about-wrapper end  -->
+            <div class="container">
+                <h2 class="titleheading" (click)="clickout()">{{'how-it-works' }}</h2>
+                <div class="clearfix"></div>
+                <div class="column">
+                    <figure class="icon-bg">
+                        <img src="assets/images/icon1.png" alt="">
+                    </figure>
+                    <h3 class="heading">{{'find-a-tutor' }}</h3>
+                    <p class="para">{{'find-a-tutor-text' }}</p>
+                </div>
+                <div class="column">
+                    <figure class="icon-bg">
+                        <img src="assets/images/icon2.png" alt="">
+                    </figure>
+                    <h3 class="heading">{{'book-lessons' }}</h3>
+                    <p class="para">{{'book-lessons-text' }}</p>
+                </div>
+                <div class="column">
+                    <figure class="icon-bg">
+                        <img src="assets/images/icon3.png" alt="">
+                    </figure>
+                    <h3 class="heading">{{'start-mastering' }}</h3>
+                    <p class="para"> {{'start-mastering-text' }}</p>
+                </div>
+            </div>
+        </div>
+        <!-- how it works end -->
+        <!-- about-wrapper  -->
+        <div class="about-wrapper clearfix">
+            <div class="aboutinner-wrapper">
+                <div class="container">
+                    <div class="image-sec">
+                        <img src="assets/images/banner1.jpg" alt="banner">
+                    </div>
+                    <div class="content">
+                        <h2 class="titleheading">{{'lorem-ipsum-is-simply'}}</h2>
+                        <p class="para">{{'lorem-ipsum-is-simply-text'}} </p>
+                        <button class="custom-btn gradient"> {{'learn-more'}}</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- about-wrapper end  -->
 
-  <!-- gallery-wrapper  -->
-  <div class="gallery-wrapper clearfix">
-      <div class="container">
-          <h2 class="titleheading"> {{'our-koalatalk-tutors'}}</h2>
-          <ul class="image-listing clearfix">
-              <li>
-                  <figure style="background-image: url('assets/images/user1.jpg');"></figure>
-                  <div class="overlay">
-                      <h3>John Doe</h3>
-                      <p>(English)</p>
-                      <button class="custom-btn gradient">Book Lesson</button>
-                  </div>
-              </li>
-              <li>
-                  <figure style="background-image: url('assets/images/user2.jpg');"></figure>
-                  <div class="overlay">
-                      <h3>John Doe</h3>
-                      <p>(English)</p>
-                      <button class="custom-btn gradient">Book Lesson</button>
-                  </div>
-              </li>
-              <li>
-                  <figure style="background-image: url('assets/images/user1.jpg');"></figure>
-                  <div class="overlay">
-                      <h3>John Doe</h3>
-                      <p>(English)</p>
-                      <button class="custom-btn gradient">Book Lesson</button>
-                  </div>
-              </li>
-              <li>
-                  <figure style="background-image: url('assets/images/user2.jpg');"></figure>
-                  <div class="overlay">
-                      <h3>John Doe</h3>
-                      <p>(English)</p>
-                      <button class="custom-btn gradient">Book Lesson</button>
-                  </div>
-              </li>
-              <li>
-                  <figure style="background-image: url('assets/images/user1.jpg');"></figure>
-                  <div class="overlay">
-                      <h3>John Doe</h3>
-                      <p>(English)</p>
-                      <button class="custom-btn gradient">Book Lesson</button>
-                  </div>
-              </li>
-              <li>
-                  <figure style="background-image: url('assets/images/user2.jpg');"></figure>
-                  <div class="overlay">
-                      <h3>John Doe</h3>
-                      <p>(English)</p>
-                      <button class="custom-btn gradient">Book Lesson</button>
-                  </div>
-              </li>
-              <li>
-                  <figure style="background-image: url('assets/images/user1.jpg');"></figure>
-                  <div class="overlay">
-                      <h3>John Doe</h3>
-                      <p>(English)</p>
-                      <button class="custom-btn gradient">Book Lesson</button>
-                  </div>
-              </li>
-              <li>
-                  <figure style="background-image: url('assets/images/user2.jpg');"></figure>
-                  <div class="overlay">
-                      <h3>John Doe</h3>
-                      <p>(English)</p>
-                      <button class="custom-btn gradient">Book Lesson</button>
-                  </div>
-              </li>
-              <li>
-                  <figure style="background-image: url('assets/images/user1.jpg');"></figure>
-                  <div class="overlay">
-                      <h3>John Doe</h3>
-                      <p>(English)</p>
-                      <button class="custom-btn gradient">Book Lesson</button>
-                  </div>
-              </li>
-              <li>
-                  <figure style="background-image: url('assets/images/user2.jpg');"></figure>
-                  <div class="overlay">
-                      <h3>John Doe</h3>
-                      <p>(English)</p>
-                      <button class="custom-btn gradient">Book Lesson</button>
-                  </div>
-              </li>
-              <li>
-                  <figure style="background-image: url('assets/images/user1.jpg');"></figure>
-                  <div class="overlay">
-                      <h3>John Doe</h3>
-                      <p>(English)</p>
-                      <button class="custom-btn gradient">Book Lesson</button>
-                  </div>
-              </li>
-              <li>
-                  <figure style="background-image: url('assets/images/user2.jpg');"></figure>
-                  <div class="overlay">
-                      <h3>John Doe</h3>
-                      <p>(English)</p>
-                      <button class="custom-btn gradient">Book Lesson</button>
-                  </div>
-              </li>
-              <li>
-                  <figure style="background-image: url('assets/images/user1.jpg');"></figure>
-                  <div class="overlay">
-                      <h3>John Doe</h3>
-                      <p>(English)</p>
-                      <button class="custom-btn gradient">Book Lesson</button>
-                  </div>
-              </li>
-              <li>
-                  <figure style="background-image: url('assets/images/user2.jpg');"></figure>
-                  <div class="overlay">
-                      <h3>John Doe</h3>
-                      <p>(English)</p>
-                      <button class="custom-btn gradient">Book Lesson</button>
-                  </div>
-              </li>
-              <li>
-                  <figure style="background-image: url('assets/images/user2.jpg');"></figure>
-                  <div class="overlay">
-                      <h3>John Doe</h3>
-                      <p>(English)</p>
-                      <button class="custom-btn gradient">Book Lesson</button>
-                  </div>
-              </li>
-          </ul>
-          <button class="custom-btn gradient">{{'see-more-tutors'}}</button>
-      </div>
-  </div>
-</div>
-<!-- gallery-wrapper end -->
+        <!-- gallery-wrapper  -->
+
+<app-recomded-expert></app-recomded-expert>
+        <div class="gallery-wrapper clearfix">
+            <div class="container">
+                <h2 class="titleheading"> {{'our-koalatalk-tutors'}}</h2>
+                <ul class="image-listing clearfix">
+                    <li>
+                        <figure style="background-image: url('assets/images/user1.jpg');"></figure>
+                        <div class="overlay">
+                            <h3>John Doe</h3>
+                            <p>(English)</p>
+                            <button class="custom-btn gradient">Book Lesson</button>
+                        </div>
+                    </li>
+                    <li>
+                        <figure style="background-image: url('assets/images/user2.jpg');"></figure>
+                        <div class="overlay">
+                            <h3>John Doe</h3>
+                            <p>(English)</p>
+                            <button class="custom-btn gradient">Book Lesson</button>
+                        </div>
+                    </li>
+                    <li>
+                        <figure style="background-image: url('assets/images/user1.jpg');"></figure>
+                        <div class="overlay">
+                            <h3>John Doe</h3>
+                            <p>(English)</p>
+                            <button class="custom-btn gradient">Book Lesson</button>
+                        </div>
+                    </li>
+                    <li>
+                        <figure style="background-image: url('assets/images/user2.jpg');"></figure>
+                        <div class="overlay">
+                            <h3>John Doe</h3>
+                            <p>(English)</p>
+                            <button class="custom-btn gradient">Book Lesson</button>
+                        </div>
+                    </li>
+                    <li>
+                        <figure style="background-image: url('assets/images/user1.jpg');"></figure>
+                        <div class="overlay">
+                            <h3>John Doe</h3>
+                            <p>(English)</p>
+                            <button class="custom-btn gradient">Book Lesson</button>
+                        </div>
+                    </li>
+                    <li>
+                        <figure style="background-image: url('assets/images/user2.jpg');"></figure>
+                        <div class="overlay">
+                            <h3>John Doe</h3>
+                            <p>(English)</p>
+                            <button class="custom-btn gradient">Book Lesson</button>
+                        </div>
+                    </li>
+                    <li>
+                        <figure style="background-image: url('assets/images/user1.jpg');"></figure>
+                        <div class="overlay">
+                            <h3>John Doe</h3>
+                            <p>(English)</p>
+                            <button class="custom-btn gradient">Book Lesson</button>
+                        </div>
+                    </li>
+                    <li>
+                        <figure style="background-image: url('assets/images/user2.jpg');"></figure>
+                        <div class="overlay">
+                            <h3>John Doe</h3>
+                            <p>(English)</p>
+                            <button class="custom-btn gradient">Book Lesson</button>
+                        </div>
+                    </li>
+                    <li>
+                        <figure style="background-image: url('assets/images/user1.jpg');"></figure>
+                        <div class="overlay">
+                            <h3>John Doe</h3>
+                            <p>(English)</p>
+                            <button class="custom-btn gradient">Book Lesson</button>
+                        </div>
+                    </li>
+                    <li>
+                        <figure style="background-image: url('assets/images/user2.jpg');"></figure>
+                        <div class="overlay">
+                            <h3>John Doe</h3>
+                            <p>(English)</p>
+                            <button class="custom-btn gradient">Book Lesson</button>
+                        </div>
+                    </li>
+                    <li>
+                        <figure style="background-image: url('assets/images/user1.jpg');"></figure>
+                        <div class="overlay">
+                            <h3>John Doe</h3>
+                            <p>(English)</p>
+                            <button class="custom-btn gradient">Book Lesson</button>
+                        </div>
+                    </li>
+                    <li>
+                        <figure style="background-image: url('assets/images/user2.jpg');"></figure>
+                        <div class="overlay">
+                            <h3>John Doe</h3>
+                            <p>(English)</p>
+                            <button class="custom-btn gradient">Book Lesson</button>
+                        </div>
+                    </li>
+                    <li>
+                        <figure style="background-image: url('assets/images/user1.jpg');"></figure>
+                        <div class="overlay">
+                            <h3>John Doe</h3>
+                            <p>(English)</p>
+                            <button class="custom-btn gradient">Book Lesson</button>
+                        </div>
+                    </li>
+                    <li>
+                        <figure style="background-image: url('assets/images/user2.jpg');"></figure>
+                        <div class="overlay">
+                            <h3>John Doe</h3>
+                            <p>(English)</p>
+                            <button class="custom-btn gradient">Book Lesson</button>
+                        </div>
+                    </li>
+                    <li>
+                        <figure style="background-image: url('assets/images/user2.jpg');"></figure>
+                        <div class="overlay">
+                            <h3>John Doe</h3>
+                            <p>(English)</p>
+                            <button class="custom-btn gradient">Book Lesson</button>
+                        </div>
+                    </li>
+                </ul>
+                <button class="custom-btn gradient">{{'see-more-tutors'}}</button>
+            </div>
+        </div>
+    </div>
+    <!-- gallery-wrapper end -->

@@ -1,5 +1,5 @@
 import { Component, OnInit, HostListener, Input, ElementRef } from '@angular/core';
-// import { trigger, state, animate, transition, style } from '@angular/animations';
+import { trigger, state, animate, transition, style } from '@angular/animations';
 import {map, startWith} from 'rxjs/operators';
 import { ActivatedRoute, Router } from '@angular/router';
 import { FormControl } from '@angular/forms';
@@ -9,14 +9,14 @@ import { Observable } from 'rxjs';
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css'],
-  // animations: [
-  //   trigger('visibilityChanged', [
-  //     state('shown', style({ opacity: 1 })),
-  //     state('hidden', style({ opacity: 0 })),
-  //     transition('shown => hidden', animate('600ms')),
-  //     transition('hidden => shown', animate('300ms')),
-  //   ])
-  // ]
+  animations: [
+    trigger('visibilityChanged', [
+      state('shown', style({ opacity: 1 })),
+      state('hidden', style({ opacity: 0 })),
+      transition('shown => hidden', animate('600ms')),
+      transition('hidden => shown', animate('300ms')),
+    ])
+  ]
 })
 export class HomeComponent implements OnInit {
   myControl = new FormControl();
@@ -40,7 +40,7 @@ export class HomeComponent implements OnInit {
     );
     setTimeout(() => {
       this.visibilityChanged = "shown";
-    }, 100);
+    }, 200);
   }
   private _filter(value: string): string[] {
     const filterValue = value.toLowerCase();

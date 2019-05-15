@@ -2,8 +2,8 @@
   <img src="assets/images/up-arrow.svg" alt="">
 </a>
 <!-- footer -->
-<footer *ngIf="IsFooterShow">
-  <div class="footer-listing">
+<footer *ngIf="IsFooterShow"  [@visibilityChanged]="visibilityChanged">
+  <div class="footer-listing" >
       <ul class="innerlinks">
           <h3 class="heading">KoalaTalk</h3>
           <li>
