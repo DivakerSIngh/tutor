@@ -8,6 +8,7 @@ import { RouterModule } from '@angular/router';
 import { HeaderComponent } from './modules/shared/header/header.component';
 import { LoginComponent } from './modules/common-pages/login/login.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { SignupComponent } from './modules/common-pages/signup/signup.component';
 import {
   MatButtonModule,
   MatInputModule,
@@ -21,7 +22,8 @@ import {
   declarations: [
     AppComponent,
     HeaderComponent,
-    LoginComponent
+    LoginComponent,
+    SignupComponent
   ],
   imports: [
     BrowserModule,

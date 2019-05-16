@@ -135,7 +135,7 @@
                     <!-- openSecond open -->
                 </li>
                 <li class="signup" *ngIf="!allowOrNot">
-                    <a [class.disabled]="allowOrNot" href="javascript:void(0)" (click)="open(signupmodal)" class="gradient">{{'sign-up' }}</a>
+                    <a [class.disabled]="allowOrNot" [routerLink]="['/signup']" class="gradient">{{'sign-up' }}</a>
                 </li>
                 <li class="toggle-btnwrap">
                     <div href="javascript:void(0);" class="toggle-button" (click)="toggleSideMenu()" [class.toggle]="isMenu">
