@@ -15,6 +15,7 @@ import { trigger, state, animate, transition, style } from '@angular/animations'
 })
 export class HeaderComponent implements OnInit {
   allowOrNot:boolean=false;
+  isMenu:boolean=false;
   visibilityChanged: String = "hidden";
   constructor() { }
 
@@ -23,5 +24,7 @@ export class HeaderComponent implements OnInit {
       this.visibilityChanged = "shown";
     }, 200);
   }
-
+  toggleSideMenu() {
+    this.isMenu = !this.isMenu
+  }
 }

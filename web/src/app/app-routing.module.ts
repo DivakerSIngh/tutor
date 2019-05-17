@@ -8,9 +8,9 @@ import { SignupComponent } from './modules/common-pages/signup/signup.component'
 const appRoutes: Routes = [   
   {path:'', loadChildren:'./modules/common-pages/common-pages.module#CommonPagesModule'},
   {path:'login', component:LoginComponent},
-  {path:'signup', component:SignupComponent}
+  {path:'signup', component:SignupComponent},
     // {path:'', loadChildren:'./modules/commonpages/commonpages.module#CommonpagesModule'},
-    // {path:'teacher', loadChildren:'./modules/teacher/teacher.module#TeacherModule'},
+  {path:'learner', loadChildren:'./modules/learner/learner.module#LearnerModule'},
     // {path:'student', loadChildren:'./modules/student/student.module#StudentModule'},
     // { path:'**',  component:NotFoundComponent },
 ]

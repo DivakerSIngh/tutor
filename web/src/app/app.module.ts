@@ -18,12 +18,15 @@ import {
   MatAutocompleteModule,
   MatSelectModule,MatGridListModule,MatProgressSpinnerModule,MatPaginatorModule, MatSlideToggleModule
 } from '@angular/material';
+
+
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     LoginComponent,
     SignupComponent
+    
   ],
   imports: [
     BrowserModule,
@@ -32,8 +35,7 @@ import {
     SharedModule,
     BrowserModule,
     AppRoutingModule,
-    RouterModule,
-    SharedModule,
+    RouterModule,    
     FormsModule,
     MatButtonModule,
   MatInputModule,
