@@ -53,6 +53,7 @@
                         <li>
                             <a href="javascript:void(0);" [routerLink]="['./student/edit-profile']" routerLinkActive="active">{{'edit-profile' }}</a>
                         </li>
+                       
                         <li>
                             <a href="javascript:void(0);" (click)="goToStudentDashboard()">{{'dashboard' }}</a>
                         </li>
@@ -201,6 +202,9 @@
                     routerLinkActive="active"> {{'Find Expert' }} </a>
             </li>
             <li>
+                    <a href="javascript:void(0);" [routerLink]="['../expert']" routerLinkActive="active">{{'Expert View' }}</a>
+                </li>
+            <li>
                 <a [class.disabled]="allowOrNot" href="javascript:void(0);" [routerLink]="['./find-topic']" (click)="toggleSideMenu()">{{'Find Topic' }}</a>
             </li>
             <li class="showdropdown studygroup">
@@ -220,7 +224,7 @@
                     (click)="toggleSideMenu()"> {{'bulletin-board' }}</a>
             </li>
             <li>
-                <a [class.disabled]="allowOrNot" href="javascript:void(0);" [routerLink]="['./become-a-tutor']" routerLinkActive="active"
+                <a [class.disabled]="allowOrNot" href="javascript:void(0);" [routerLink]="['./become-a-expert']" routerLinkActive="active"
                     (click)="toggleSideMenu()">
 
                     {{'Become Expert' }}

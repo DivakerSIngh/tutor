@@ -34,13 +34,51 @@
 
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+
+<style>
+
+
+
+        .saving span {
+          font-size: 50px;
+          animation-name: blink;
+          animation-duration: 1.4s;
+          animation-iteration-count: infinite;
+          animation-fill-mode: both;
+        }
+        
+        .saving span:nth-child(2) {
+          animation-delay: .2s;
+        }
+        
+        .saving span:nth-child(3) {
+          animation-delay: .4s;
+        }
+        
+        @keyframes blink {
+          0% {
+            opacity: .2;
+          }
+          20% {
+            opacity: 1;
+          }
+          100% {
+            opacity: .2;
+          }
+        }
+        </style>
 </head>
 
 <body>
     <div class="body-wrapper">
         <app-root>
             <div class="logo-loader">
-               <h1>OFR - Push Notification Using Singlar</h1>
+               <!-- <h1>OFR - Push Notification Using Singlar</h1> -->
+
+
+               <p class="saving">Loading<span>.</span><span>.</span><span>.</span></p>
+
             </div>
             <!-- <div id="containerPreboost">
                 <h1 class="loader-mainpage">Loading<span>.</span><span>.</span><span>.</span></h1>

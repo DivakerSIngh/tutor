@@ -1,6 +1,21 @@
 /* header css
 *******************************/
 
+a.active:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 33%;
+    width: 62px;
+    margin-bottom: 13px;
+    height: 3px;
+    background: #6664d4;
+    border-radius: 6px;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+}
 .header-wrapper {
     background: #ffffff;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);

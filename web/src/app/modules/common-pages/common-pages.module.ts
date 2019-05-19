@@ -12,15 +12,17 @@ import {
   MatFormFieldModule,
   MatTooltipModule,
   MatAutocompleteModule,
-  MatSelectModule,MatGridListModule,MatProgressSpinnerModule,MatPaginatorModule, MatSlideToggleModule
+  MatSelectModule,MatGridListModule,MatProgressSpinnerModule,MatPaginatorModule, MatSlideToggleModule, MatAccordion, MatExpansionPanelTitle, MatExpansionPanel
 } from '@angular/material';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RecomdedExpertComponent } from './recomded-expert/recomded-expert.component';
-import { ExpertFilterComponent } from '../shared/expert-filter/expert-filter.component';
+
 import { SharedModule } from '../shared/shared.module';
+import { BecomeExpertComponent } from './become-expert/become-expert.component';
+import { HeaderComponent } from '../shared/header/header.component';
 
 @NgModule({
-  declarations: [HomeComponent, RecomdedExpertComponent],
+  declarations: [HomeComponent, RecomdedExpertComponent, BecomeExpertComponent],
   imports: [
     CommonPageRouterModule,   
     CommonModule,
@@ -28,6 +30,7 @@ import { SharedModule } from '../shared/shared.module';
     FormsModule,
     SharedModule,
     ReactiveFormsModule,
+    
     MatButtonModule,
   MatInputModule,
   MatRippleModule,

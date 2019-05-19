@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SharedModule } from "./modules/shared/shared.module";
 import { RouterModule } from '@angular/router';
-import { HeaderComponent } from './modules/shared/header/header.component';
+// import { HeaderComponent } from './modules/shared/header/header.component';
 import { LoginComponent } from './modules/common-pages/login/login.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SignupComponent } from './modules/common-pages/signup/signup.component';
@@ -20,13 +20,15 @@ import {
 } from '@angular/material';
 
 
+
+
+
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent,
+    // HeaderComponent,
     LoginComponent,
-    SignupComponent
-    
+    SignupComponent,
   ],
   imports: [
     BrowserModule,

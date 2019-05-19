@@ -1,0 +1,114 @@
+<div class="main-content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                   
+                    <div class="card-body">
+                        <form [formGroup]="frm" (ngSubmit)="submit()" novalidate>
+                            <div class="row">
+                                
+                                <div class="col-md-3">
+                                    <mat-form-field class="example-full-width">
+                                        <input type="text" required placeholder="Select Category" aria-label="Number" matInput
+                                            [formControl]="myControl" [matAutocomplete]="auto">
+                                        <mat-autocomplete #auto="matAutocomplete">
+                                            <mat-option *ngFor="let option of filteredOptions | async" [value]="option">
+                                                {{option}}
+                                            </mat-option>
+                                        </mat-autocomplete>
+                                    </mat-form-field>  
+
+                                </div>
+                                
+                                <div class="col-md-3">
+                                    <mat-form-field class="example-full-width">
+                                        <input matInput placeholder="Skill Title"  #refName required  formControlName="name">
+                                      </mat-form-field>
+                              </div>
+                              <div class="col-md-6">
+                                  <label>About Skill</label>
+                                  <mat-form-field class="example-full-width">
+                                     <textarea matInput #refName required   formControlName="description" placeholder="Lamborghini Mercy, Your chick she so thirsty, I'm in that two seat Lambo."></textarea>
+                                   </mat-form-field>
+                                </div>
+                            </div>
+                           
+                           
+                           
+                            <button mat-raised-button type="submit" *ngIf="pageMode=='add'"  [disabled]="frm.invalid" class="btn btn-danger pull-right">Save</button>
+                            <button mat-raised-button type="submit"  *ngIf="pageMode=='update'"  [disabled]="frm.invalid" class="btn btn-danger pull-right">Update</button>
+                            <div class="clearfix"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-12">
+              <div class="card">
+                  <div class="card-header card-header-danger">
+                      <h4 class="card-title ">Skill List</h4>
+                      
+                  </div>
+                  <div class="card-body">
+                      <div class="table-responsive">
+                          <table class="table">
+                              <thead class=" text-primary">
+                                  <th>
+                                      No
+                                  </th>
+                                  <th>
+                                      Skill Name
+                                  </th>
+                                  <th>
+                                       About Course
+                                    </th>
+                                
+                                  <th>
+                                      Action
+                                  </th>
+                                 
+                              </thead>
+                              <tbody>
+                                    <tr *ngFor="let item of skillList let i = index" [attr.data-index]="i">
+                                            <td>
+                                               {{i+1}}
+                                            </td>
+                                            <td>
+                                               {{item.Name}}
+                                            </td>
+                                            <td>
+                                                    {{item.Description}}
+                                                  
+                                            </td>
+                                         
+                                           
+                                            <td class="td-actions">
+                                              <button mat-raised-button type="button" matTooltip="Edit Task" (click)="edit(item,id)" [matTooltipPosition]="'above'" class="btn btn-primary btn-link btn-sm btn-just-icon">
+                                                  <i class="material-icons">edit</i>
+                                              </button>
+                                              <button mat-raised-button type="button" matTooltip="Remove" (click)="delete(item,id)" [matTooltipPosition]="'above'" class="btn btn-danger btn-link btn-sm btn-just-icon">
+                                                  <i class="material-icons">close</i>
+                                              </button>
+                                          </td>
+                                        </tr>
+                                       
+                              </tbody>
+                              
+                          </table>
+                          <div class="pager-botom">
+                                <mat-paginator [length]="length"
+                                [pageSize]="pageSize"
+                                [pageIndex]="pageIndex"
+                                [pageSizeOptions]="pageSizeOptions"
+                                (page)="loadMore($event)">
+                  </mat-paginator>
+                         </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+    </div>
+  </div>
+  

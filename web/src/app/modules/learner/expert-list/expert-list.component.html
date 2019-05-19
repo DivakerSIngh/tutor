@@ -21,8 +21,10 @@
                   <app-teacher-calendar></app-teacher-calendar> -->
               </div>
               <div class="tutorlisting-container">
-                  <a href="javascript:void(0)" (mouseover)="getDetailsofTeacher($event,teacher)" *ngFor="let teacher of teacherList" [routerLink]="[ '../details',teacher._id]" class="tutorlisting-column  checked hvr-grow-shadow">
-                      <div class="figure-section">
+                  <!-- <a href="javascript:void(0)" (mouseover)="getDetailsofTeacher($event,teacher)" *ngFor="let teacher of teacherList" [routerLink]="[ '../details',teacher._id]" class="tutorlisting-column  checked hvr-grow-shadow"> -->
+                    <a href="javascript:void(0)" (mouseover)="getDetailsofTeacher($event,teacher)" *ngFor="let teacher of teacherList" [routerLink]="[ '../profile']" class="tutorlisting-column  checked hvr-grow-shadow">
+                    
+                    <div class="figure-section">
                           <figure [style.background-image]="'url('+ teacher.image +')'"></figure>
                           <!-- <figure style="background-image: url('assets/images/user1.jpg')"></figure> -->
                           <div class="doller-btn">$23 - 25</div>

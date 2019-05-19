@@ -11,9 +11,19 @@ import {
   MatFormFieldModule,
   MatAutocompleteModule,
   MatSelectModule} from '@angular/material';
+import { LearnerProfileLeftbarComponent } from './learner-profile-leftbar/learner-profile-leftbar.component';
+import { ChangePasswordComponent } from './change-password/change-password.component';
+import { LearnerLayoutComponent } from './learner-layout/learner-layout.component';
+import { ExpertLayoutComponent } from './expert-layout/expert-layout.component';
+import { ExpertViewLeftSidemenuComponent } from './expert-view/expert-view-left-sidemenu/expert-view-left-sidemenu.component';
+
 
 @NgModule({
-  declarations: [FooterComponent,ExpertFilterComponent],
+  declarations: [FooterComponent
+    ,ExpertFilterComponent,
+     LearnerProfileLeftbarComponent, ChangePasswordComponent,LearnerLayoutComponent,ExpertLayoutComponent,HeaderComponent
+     ,ExpertViewLeftSidemenuComponent
+    ],
   imports: [
     CommonModule,
     ReactiveFormsModule,
@@ -26,7 +36,7 @@ import {
   MatSelectModule
   ],
   exports: [
-    FooterComponent,ExpertFilterComponent
+    ExpertViewLeftSidemenuComponent,HeaderComponent, FooterComponent,ExpertFilterComponent,LearnerProfileLeftbarComponent,ChangePasswordComponent,LearnerLayoutComponent,ExpertLayoutComponent
   ]
 })
 export class SharedModule { }

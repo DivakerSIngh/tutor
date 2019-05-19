@@ -1,0 +1,74 @@
+<div class="leftbarwrapper-inner">
+  <div class="userdetails-leftbar">
+      <figure class="userimage" [style.background-image]="'url('+ userProfilePic +')'"></figure>
+      <p class="user">{{userFullName}}</p>
+      <p class="email">{{email}}</p>
+  </div>
+  <ul class="leftbarlisting">
+      <li>
+          <a href="javascript:void(0);" [routerLink]="['./lessons']" routerLinkActive="active">
+              <img src="assets/images/lesson-active.png" class="active" alt="">
+              <img src="assets/images/lesson-deactive.png" class="deactive" alt="">
+              <span>{{'Topic'}}</span>
+          </a>
+      </li>
+      <li>
+          <a href="javascript:void(0);" [routerLink]="['./friends-group']" routerLinkActive="active">
+              <img src="assets/images/group-active.png" class="active" alt="">
+              <img src="assets/images/group-deactive.png" class="deactive" alt="">
+              <span>{{'Friends-&-groups'}}</span>
+          </a>
+      </li>
+      <li>
+          <a href="javascript:void(0);">
+              <img src="assets/images/credits-active.png" class="active" alt="">
+              <img src="assets/images/credits-deactive.png" class="deactive" alt="">
+              <span>{{'Credits'}}</span>
+          </a>
+      </li>
+      <li>
+          <a href="javascript:void(0);" data-toggle="collapse" data-target="#Setting">
+              <img src="assets/images/setting-active.png" class="active" alt="">
+              <img src="assets/images/setting-deactive.png" class="deactive" alt="">
+              <span>{{'Settings'}}</span>
+          </a>
+          <ul class="leftbar-sublisting collapse" id="Setting">
+              <li>
+                  <a href="javascript:void(0);" [routerLink]="['./topic']" routerLinkActive="active">
+                      <img src="assets/images/classes-active.png" class="active" alt="">
+                      <img src="assets/images/classes-deactive.png" class="deactive" alt="">
+                      <span>{{'Topic'}}</span>
+                  </a>
+              </li>
+              <li>
+                  <a href="javascript:void(0);" [routerLink]="['./learner-notification']" routerLinkActive="active">
+                      <img src="assets/images/notification-active.png" class="active" alt="">
+                      <img src="assets/images/notification-deactive.png" class="deactive" alt="">
+                      <span>{{'Notifications'}}</span>
+                  </a>
+              </li>
+              <!-- <li>
+                  <a href="javascript:void(0);">
+                      <img src="assets/images/receipt-active.png" class="active" alt="">
+                      <img src="assets/images/receipt-deactive.png" class="deactive" alt="">
+                      <span>{{'receipt'}}</span>
+                  </a>
+              </li> -->
+              <li>
+                  <a href="javascript:void(0);" [routerLink]="['./learner-password']" routerLinkActive="active">
+                      <img src="assets/images/change-password-active.png" class="active" alt="">
+                      <img src="assets/images/change-password-deactive.png" class="deactive" alt="">
+                      <span>{{'change-password'}}</span>
+                  </a>
+              </li>
+          </ul>
+      </li>
+      <li>
+          <a href="javascript:void(0);" [routerLink]="['./help-center']" routerLinkActive="active">
+              <img src="assets/images/help-active.png" class="active" alt="">
+              <img src="assets/images/help-deactive.png" class="deactive" alt="">
+              <span>{{'help-center'}} </span>
+          </a>
+      </li>
+  </ul>
+</div>
