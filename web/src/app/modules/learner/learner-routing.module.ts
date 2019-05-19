@@ -11,6 +11,7 @@ import { LearnerTopicTabsComponent } from './profile/components/learner-topic-ta
 import { LearnerProfileHomeComponent } from './learner-profile-home/learner-profile-home.component';
 import { UnscheduledTopicComponent } from './profile/components/unscheduled-topic/unscheduled-topic.component';
 import { LearnerPasswordComponent } from './setting/learner-password/learner-password.component';
+import { BecomeExpertComponent } from './become-expert/become-expert.component';
 
 const routes: Routes = [
   //{ path:'', redirectTo:'list', component:ExpertListComponent },    
@@ -41,6 +42,8 @@ const routes: Routes = [
                 
       ],
     },
+    { path:'become-a-expert', component:BecomeExpertComponent},
+    
  
 ]
 @NgModule({

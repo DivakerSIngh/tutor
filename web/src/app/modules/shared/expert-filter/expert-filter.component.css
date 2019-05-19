@@ -4,7 +4,9 @@
 .tp-form-header {
     background-color: #6664d4;
 }
-
+.mat-form-field{
+        display: inline-block !important;
+}
 .tp-form-header {
     position: absolute;
     left: 0;

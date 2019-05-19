@@ -7,11 +7,11 @@ import { LearnerRoutingModule } from './learner-routing.module';
 import {
   MatButtonModule,
   MatInputModule,
+  MatRippleModule,
   MatFormFieldModule,
-  MatAutocompleteModule,
-  MatSelectModule,
-  MatRadioModule,
-  MatDatepickerModule} from '@angular/material';
+  MatTooltipModule,
+  MatSelectModule,MatGridListModule,MatProgressSpinnerModule,MatPaginatorModule, MatSlideToggleModule, MatAutocompleteModule, MatRadioModule, MatDatepickerModule
+} from '@angular/material';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ExpertListComponent } from './expert-list/expert-list.component';
 import { SharedModule } from '../shared/shared.module';
@@ -29,13 +29,14 @@ import { LearnerProfileHomeComponent } from './learner-profile-home/learner-prof
 import { NgbDatepickerModule, NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { UnscheduledTopicComponent } from './profile/components/unscheduled-topic/unscheduled-topic.component';
 import { LearnerPasswordComponent } from './setting/learner-password/learner-password.component';
+import { BecomeExpertComponent } from './become-expert/become-expert.component';
 
 
 @NgModule({
   declarations: [ExpertListComponent,ScheduledTopicComponent,
     PastTopicComponent,FavouriteExpertComponent,TopicStatusCalenderComponent,
      ProfileComponent,LearnerTopicComponent, EditProfileComponent, LearnerNotificationComponent, 
-     LearnerPasswordComponent, LearnerTopicTabsComponent, LearnerProfileHomeComponent, UnscheduledTopicComponent, LearnerPasswordComponent],
+     LearnerPasswordComponent, LearnerTopicTabsComponent, LearnerProfileHomeComponent, UnscheduledTopicComponent, LearnerPasswordComponent, BecomeExpertComponent],
   imports: [
     CommonModule,
     LearnerRoutingModule,
@@ -49,7 +50,13 @@ import { LearnerPasswordComponent } from './setting/learner-password/learner-pas
   MatFormFieldModule,
   MatAutocompleteModule,
   MatSelectModule,
-  MatRadioModule
+  MatRadioModule,
+  
+
+  MatRippleModule,
+  
+  MatTooltipModule,
+  MatGridListModule,MatProgressSpinnerModule,MatPaginatorModule, MatSlideToggleModule, MatAutocompleteModule
   ]
 })
 export class LearnerModule { }

@@ -18,11 +18,11 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RecomdedExpertComponent } from './recomded-expert/recomded-expert.component';
 
 import { SharedModule } from '../shared/shared.module';
-import { BecomeExpertComponent } from './become-expert/become-expert.component';
+
 import { HeaderComponent } from '../shared/header/header.component';
 
 @NgModule({
-  declarations: [HomeComponent, RecomdedExpertComponent, BecomeExpertComponent],
+  declarations: [HomeComponent, RecomdedExpertComponent],
   imports: [
     CommonPageRouterModule,   
     CommonModule,
