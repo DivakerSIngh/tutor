@@ -21,8 +21,6 @@ import {
 
 
 
-
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,6 +31,7 @@ import {
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    
     AppRoutingModule,
     SharedModule,
     BrowserModule,

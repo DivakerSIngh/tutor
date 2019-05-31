@@ -18,11 +18,27 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ExpertNotificationComponent } from './expert-notification/expert-notification.component';
 import { AvailabilityCalenderComponent } from './availability-calender/availability-calender.component';
 
+import { CalendarModule, DateAdapter } from 'angular-calendar';
+import { FlatpickrModule } from 'angularx-flatpickr';
+import { adapterFactory } from 'angular-calendar/date-adapters/date-fns';
+import { NgbModalModule } from '@ng-bootstrap/ng-bootstrap';
+
+
+
+import { ScheduleAllModule, RecurrenceEditorAllModule } from '@syncfusion/ej2-angular-schedule';
+
 
 @NgModule({
   declarations: [BasicProfileComponent, BecomeExpertComponent, DashboardComponent, SkillDetailsComponent, ExpertNotificationComponent, AvailabilityCalenderComponent],
   imports: [
     CommonModule,
+    NgbModalModule,
+    ScheduleAllModule, RecurrenceEditorAllModule, 
+    FlatpickrModule.forRoot(),
+    CalendarModule.forRoot({
+      provide: DateAdapter,
+      useFactory: adapterFactory
+    }),
     ExpertRoutingModule,
     FormsModule,
     ReactiveFormsModule,
